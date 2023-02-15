@@ -1,0 +1,61 @@
+.technical_details{
+    width: 95%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin: 1rem auto;
+    position: relative;
+    .left{
+        text-align: left;
+h2, h5{
+    color: var(--clr-secondary);
+    // border-bottom: 2px solid var(--clr-primary);
+    width: fit-content;
+    padding: 0 1.1rem;
+    
+}
+
+ul{
+    li{
+        margin-left: 1.1rem;
+        line-height: 2rem;
+    }
+    
+}
+    }
+    .right{
+        background-color: var(--clr-secondary);
+        height: fit-content;
+        padding: 2rem 1rem;
+        color: var(--clr-white);
+        text-align: left;
+        line-height: 3rem;
+        box-shadow: 2px 2px 4px var(--clr-border-shadow);
+        a{
+            color: var(--clr-white);
+        }
+        hr{
+            background-color: var(--clr-white);
+        }
+        li{
+            list-style: none;
+        }
+        .appointment-btn{
+            background-color: var(--clr-primary);
+            color: var(--clr-white);
+        }
+    }
+}
+
+@media (max-width:790px) {
+    .technical_details{
+        width: 95%;
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 2rem;
+        margin: 1rem auto;
+        position: relative;
+
+        
+    }
+}

@@ -1,0 +1,36 @@
+.short-message{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    box-shadow: 2px 3px 6px var(--clr-border-shadow);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    transition: .6s;
+    .container{
+        margin: auto;
+        .sm-icon{
+            background-color: var(--clr-primary);
+            width: 55px;
+            height: 55px;
+            border-radius: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            .icon{
+                color: white;
+                width: 60%;
+                height: 60%;
+            }
+        }
+    }
+}
+
+.short-message:hover{
+    box-shadow: 0 7px 10px var(--clr-border-shadow);
+}
