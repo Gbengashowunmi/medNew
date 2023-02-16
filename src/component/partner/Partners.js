@@ -50,7 +50,6 @@ export default function Partners() {
     setProducts(partners);
   }, []);
 
-console.log(products);
   return (
     <Slider {...settings}>
       {products.map(partner=>{

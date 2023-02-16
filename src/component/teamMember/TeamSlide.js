@@ -77,7 +77,7 @@ export default function TeamSlide() {
       </div>
       <div className="item">
         <TeamMember
-          image="/images/Esther.jpg"
+          image="/images/ESTHER.jpg"
           name="GODWINS ESTHER"
           position="BUSINESS DEV. MANAGER"
         />

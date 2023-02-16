@@ -123,7 +123,7 @@ const handleTerms =() =>{
             </Link>
             </div></> : <><h2 className="light-blue-bg-text">Terms and Condition</h2> <p> terms and condition loading....</p> <div className="modal-btns">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Close</Button>
-            <Link to="//docs.google.com/forms/d/1bAhArgs0iLrhyHGKG4Wag9Y6WILojm4JERVYnIEcRcY/edit">
+            <Link to="/financial_support">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
             </Link>
             </div> </> }

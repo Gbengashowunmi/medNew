@@ -39,13 +39,13 @@ export default function ReviewSlider() {
   return (
     <Slider {...settings}>
       <div className="item">
-        <Reviews review="Medau has really good Products and the Service is Excellent" reviewer=" Dr Ojo" reviewerWork="" />
+        <Reviews review="Medau has really good Products and the Service is Excellent" reviewer=" Dr. Ojo" reviewerWork="" />
       </div>
       <div className="item">
-        <Reviews review="The prices are really pocket friendly and encouraging" reviewer="Dr Abene " />
+        <Reviews review="The prices are really pocket friendly and encouraging" reviewer="Dr. Abene " />
       </div>
       <div className="item">
-        <Reviews review="Your team is great. They truly understand the equipment 100%. It's worth doing business with you." reviewer="Love Grace"  />
+        <Reviews review="Your team is great. They truly understand the equipment 100%. It's worth doing business with you." reviewer="Dr. Love Grace"  />
       </div>
       <div className="item">
         <Reviews review="Great products and services. The cost of products is reasonable too" reviewer="Dr Umezurike" />

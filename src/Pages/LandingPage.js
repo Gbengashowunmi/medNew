@@ -38,7 +38,7 @@ export default function LandingPage() {
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <h3>Our Specialized Solutions </h3>
+            <h3>Explore our Specialized Solutions </h3>
             <p>
               We offer various solutions to affordability and standard
               healthcare products and services
@@ -79,11 +79,11 @@ export default function LandingPage() {
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <h3>Need financing?</h3>
+            <h3>Need financing?</h3> <br/>
             <p>
               Is your budget restricted? We offer Financing solutions for your projects and equipment procurement
             </p>
-            <Link to="//docs.google.com/forms/d/1bAhArgs0iLrhyHGKG4Wag9Y6WILojm4JERVYnIEcRcY/edit">
+            <Link to="/financial_support">
               <button>Reach out to us</button>
             </Link>
           </div>
@@ -118,7 +118,7 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
         >
           <h3>Working Hours</h3>
           <hr />
@@ -155,7 +155,7 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
         >
           <div className="img">
             <img src="/images/card_image_01.jpg" alt="aside" />
@@ -207,10 +207,10 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
         >
           <div className="img">
-            <img src="/images/card_image_02.jpg" alt="aside" />
+            <img src="/images/our_process.jpeg" alt="aside" />
           </div>
           <div className="text">
             <h2>Our Process</h2>

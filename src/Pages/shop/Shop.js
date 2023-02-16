@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { BiCategory } from "react-icons/bi";
 import { IoIosFlash } from "react-icons/io";
-import Button from "@mui/material/Button";
 import { BsCart4, BsForwardFill, BsGiftFill, BsSearch } from "react-icons/bs";
 import { RiAccountPinCircleFill } from "react-icons/ri";
 import "./shop.scss";
@@ -84,30 +83,7 @@ export default function Shop() {
             CATEGORIES
           </button>
 
-          <ul className="ul">
-            <Link to="#Hemodialysis">
-              <li>Hemodialysis Machines</li>
-            </Link>
-            <Link to="#ICU">
-              {" "}
-              <li>ICU Equipment</li>
-            </Link>
-            <Link to="#Operating_Theatre_Equipment">
-              {" "}
-              <li>Operating Theatre Equipment</li>
-            </Link>
-            <Link to="#Diagnostic_Imaging_Equipment">
-              {" "}
-              <li>Diagnostic Imaging Equipment</li>
-            </Link>
-            <Link to="#consumables">
-              {" "}
-              <li>All consumables</li>
-            </Link>
-            <NavLink to="/service">
-              <li>Services</li>
-            </NavLink>
-          </ul>
+
         </div>
         <form className="search" type="submit" onSubmit={handleSubmit}>
           <BsSearch className="search-icon" />
@@ -157,12 +133,13 @@ export default function Shop() {
                 </button>
               </div>
               <div className="products-container">
-                <CenterSlider />
+          <SimpleSlider />
+
               </div>
               <div className="header">
                 <h3>
                   <IoIosFlash className="icon" />
-                  Hemodialysis Consumeables
+                  Hemodialysis Consumables
                 </h3>
               </div>
               <div className="consumeables-container">
@@ -197,12 +174,12 @@ export default function Shop() {
                 </button>
               </div>
               <div className="products-container">
-                <SimpleSlider />
+              <CenterSlider />
               </div>
               <div className="header">
                 <h3>
                   <IoIosFlash className="icon" />
-                  ICU Consumeables
+                  ICU Consumables
                 </h3>
               </div>
               <div className="consumeables-container">
@@ -294,11 +271,11 @@ export default function Shop() {
                   })}
               </div>
             </div>
-            <div className="flash">
+            {/* <div className="flash">
               <div className="header">
                 <h3>
                   <BiCategory className="icon" />
-                  Medical Consumeables
+                  Medical Consumables
                 </h3>
                 <button>
                   <p>
@@ -323,7 +300,7 @@ export default function Shop() {
                     );
                   })}
               </div>
-            </div>
+            </div> */}
             <section
               className="short-message-wrapper"
               data-aos="zoom-in-right"

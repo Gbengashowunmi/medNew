@@ -27,13 +27,10 @@ export default function ProductDetail() {
       <div className="product-page">
         <section className="hero-section">
           <div className="product-img">
-            <div className="main-img">
               <img
                 src={product.image}
                 alt="product"
               />
-            </div>
-
           </div>
           <div className="product-info">
             <h2>{product.name}</h2>

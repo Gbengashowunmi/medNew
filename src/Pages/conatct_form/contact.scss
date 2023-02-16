@@ -1,0 +1,11 @@
+.finance-form{
+    width: 60%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    .input{
+        // width: 60%;
+        margin: 2rem 0;
+    }
+}

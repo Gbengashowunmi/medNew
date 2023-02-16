@@ -44,7 +44,7 @@ export default function CenterSlider() {
   },[])
   return (
     <Slider {...settings}>
-    {products.filter(filtered=> filtered.category === "hemodialysis").map(product=>{
+    {products.filter(filtered=> filtered.category === "ICU Equipment").map(product=>{
       return (
         <div className="item" key={product.id}>
           <ProductCard id={product.id} image={product.image}

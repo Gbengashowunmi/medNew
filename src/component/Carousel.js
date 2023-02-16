@@ -26,7 +26,7 @@ export default function Carousel() {
         </div>
         <div className="details">
           <h1> WELCOME TO THE FUTURE OF HEALTH CARE IN AFRICA</h1>
-          <h3> -The future is afordability</h3>
+          <h3> -The future is affordability</h3>
         </div>
       </div>
       <div className="carousel-item">

@@ -12,7 +12,7 @@ export default function Consumeables({image,productName, id}) {
 
         <p className='item-name'>{productName}</p>
         </div>
-         <div className='discount'>%565 off</div>
+         {/* <div className='discount'>%565 off</div> */}
         
     </div>
   )
