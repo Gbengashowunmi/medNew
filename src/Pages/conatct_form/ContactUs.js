@@ -35,7 +35,7 @@ export default function ContactUs() {
             data-aos-mirror="true"
             data-aos-once="false"
           >
-            <h2>Fianacial Support</h2>
+            <h2>HealthVest</h2>
             <p>
               <MdOutlineHome />
               <NavLink to="/">
@@ -48,8 +48,9 @@ export default function ContactUs() {
         </div>
       </div>
     <form className="finance-form" onSubmit={sendEmail}>
+      <h4>Kindly fill the form below to apply for a HealthVest support</h4>
       <input type="hidden" name="contact_number" />
-      <TextField id="outlined-basic" label="Full Name" name="full_name" variant="outlined" />
+      <TextField id="outlined-basic" label="Full Name" name="full_name" variant="outlined" className='input' />
 
       <TextField id="outlined-basic" label="Email" name="email" variant="outlined" className='input'/>
       <TextField id="outlined-basic" label="Phone Number" name="number" variant="outlined" className='input' />

@@ -5,7 +5,7 @@ const data = [
     description: "",
     brand:"",
     category: "hemodialysis",
-    name: "Brand New Fresenius 4008S Classix (BP Model)",
+    name: "Fresenius 4008S Classix (BP Model)",
     features: [
       "Dimension: 1370 x 500 x 650mm (H x W x D) (Including shunt interlock and pedestal) approx.",
       "Weight: 86kg",
@@ -63,8 +63,17 @@ const data = [
   },
 
   {
+    id: 14,
+    image: "/images/product-images/Drager-Primus_Anasthesia_machine.jpeg",
+    description: "",
+    brand:"",
+    category: "ICU Equipment",
+    name: " Drager Primus Anasthesia Machine  ",
+    features:[""]
+  },
+  {
     id: 4,
-    image: "/images/product-images/Patient_Monitor.png",
+    image: "/images/product-images/patient_monitor.jpg",
     description: "",
     brand:"PG S70 COUNTRY: ITALY",
     category: "ICU Equipment",
@@ -134,7 +143,7 @@ const data = [
   // },
   {
     id: 10,
-    image: "/images/product-images/Defibrillators.jpg",
+    image: "/images/product-images/Defibrillators.png",
     description: "",
     brand:"",
     category: "ICU Equipment",
@@ -168,24 +177,8 @@ const data = [
     name: "Surgical Light ",
     features:["Ceiling-mounted, double-dome, two 50cm domes, each luminance at least 120000 Lux (54 bulbs) (108 bulbs)"]
   },
-  // {
-  //   id: 14,
-  //   image: "/images/product-images/surgical_light.png",
-  //   description: "",
-  //   brand:"PGEY-500T",
-  //   category: "Operating Theatre Equipment",
-  //   name: "Surgical Lamp Light ",
-  //   features:["TRANSPORT, single dome of 50cm luminance at least 120000Lux"]
-  // },
-  {
-    id: 15,
-    image: "/images/product-images/Defibrillators.jpg",
-    description: "",
-    brand:"",
-    category: "ICU Equipment",
-    name: "Defibrillators",
-    features:["Advanced solution for emergency medicine. Ergonomic form, extremely robust", "Close to the needs of the modern emergency medicine, rescue life guarantees impact-proof larger TFT", "LCD color 7” display", "powerful battery up to 5 hours continuous monitoring and different product configurations.", "Individuals can choose from basic to fully equipped models among the available"]
-  },
+  
+
   {
     id: 16,
     image: "/images/product-images/Operation_Table.png",
@@ -289,16 +282,16 @@ const data = [
   },
   {
     id: 26,
-    image: "/images/product-images/radiography.jpg",
+    image: "/images/product-images/x-ray.jpeg",
     description: "",
     brand:"",
     category: "Diagnostic Imaging Equipment",
-    name: "Radiography",
+    name: "Radiography X-ray Machine",
     features:[""]
   },
   {
     id: 27,
-    image: "/images/product-images/ultrasound.jpg",
+    image: "/images/product-images/ultrasound.jpeg",
     description: "",
     brand:"",
     category: "Diagnostic Imaging Equipment",
@@ -346,7 +339,7 @@ const data = [
   },
   {
     id: 32,
-    image: "/images/product-images/Acid_Concentrate_(10L).png",
+    image: "/images/product-images/acid_concentrate.jpeg",
     description: "",
     brand:"",
     category: "hemodialysis consumeables",
@@ -365,19 +358,7 @@ const data = [
 
   },
 
-  {
-    id: 35,
-    image: "/images/product-images/Manual_Dialysis_Chair.jpg",
-    description: "",
-    brand:"",
-    category: "hemodialysis",
-    name: "Manual Dialysis Chair",
-    features:[
-      "Economical and comfortable option for dialysis patients and caregivers.", "Barrier free accessibility from the side",
-      "A fold downside tray","IV pole", "Reclining Trendelenburg positioning as well.", "Lockable casters", "Waterproof"
-    ]
 
-  },
 
   {
     id: 37,

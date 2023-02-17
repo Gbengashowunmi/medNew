@@ -17,9 +17,16 @@ import Modal from '@mui/material/Modal';
 
 export default function HeadFoot({ children }) {
   const [isOpen, setIsOpen] = useState(false);
-
+// show and hide shop Category handler and state 
+const [showShopCategory, setShowShopCategory] = useState(false);
+const handleShop = ()=>{
+  setShowShopCategory(!showShopCategory)
+  console.log(showShopCategory)
+  
+}
+// const {id} = useParams()
   // terms and cndition
-  const [showTerms, setShowTerms] = useState(false)
+const [showTerms, setShowTerms] = useState(false)
 const handleTerms =() =>{
   setShowTerms(true)
 }
@@ -30,17 +37,6 @@ const handleTerms =() =>{
     setOpen(false)
   setShowTerms(false)
   }
-  const style = {
-    position: 'absolute',
-    top: '50%',
-    left: '50%',
-    transform: 'translate(-50%, -50%)',
-    width: 700,
-    bgcolor: 'background.paper',
-    border: '1px solid #02127c',
-    boxShadow: 24,
-    p: 4,
-  };
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -91,9 +87,33 @@ const handleTerms =() =>{
           <NavLink to="/about">
             <li>About</li>
           </NavLink>
-          <NavLink to="/shop">
-            <li>Shop</li>
-          </NavLink>
+          <div className="shop_dropdown_wrapper">
+            <li onClick={handleShop}>Shop</li>
+            {showShopCategory?<div className="shop_dropdown">
+  <ul>
+    <NavLink to="/shop">
+    <li onClick={handleShop}>See All Products</li>
+    </NavLink>
+     <NavLink to ="/shop/hemodialysis">
+     <li onClick={handleShop}>Go to Hemodialysis</li>
+     </NavLink>
+
+    <NavLink to="/shop/ICU Equipment">
+    <li onClick={handleShop}>Go to ICU Equipments</li>
+    </NavLink>
+    <NavLink to="/shop/Diagnostic Imaging Equipment">
+    <li onClick={handleShop}>Go to Diagnostic Imaging Equipmen</li>
+    </NavLink>
+
+    <NavLink to="/shop/Operating Theatre Equipment">
+    <li>Go to Operation Equipment</li>
+    </NavLink>
+
+
+  </ul>
+</div>:""}
+          </div>
+          {/* </NavLink> */}
           <NavLink to="/service">
             <li>Service</li>
           </NavLink>
@@ -107,6 +127,8 @@ const handleTerms =() =>{
           <Button variant="contained" className="appointment-btn" onClick={handleOpen}>Healthvest</Button>
 
         </ul>
+
+        {/* modal for healthvest  */}
         <Modal
         open={open}
         onClose={handleClose}
@@ -114,11 +136,11 @@ const handleTerms =() =>{
         aria-describedby="modal-modal-description"
       >
         <div className="healthvest_wrapper">
-          <div className="cancel" onClick={handleClose}>X</div>
+          <div className="cancel" onClick={handleClose}>X</div> 
            {!showTerms? <>  <h2 className="light-blue-bg-text">What is Health Vest?</h2>
             <p>Health Vest is a medical equipment financing platform which facilitates convenient way for individuals and businesses to purchase the necessary goods they need without breaking their bank. With this platform, users are able to spread out payments over a length of time up to five years at competitive interest rates with no hidden costs. This makes it easier for consumers or companies who didn't have the money upfront, but still needed these products, to acquire them - especially those that can be quite costly such as medical imaging devices, diagnostic instruments, ventilators and more. Furthermore, customers have access to quality refurbished items which would further lower cost and allow buyers affordable payment options while adhering to regulatory industry standards we must meet in order achieve safe use and maintenance of our products.</p> <div className="modal-btns">
             <Button className="appointment-btn" onClick={handleTerms}>Terms and Conditions</Button>
-            <Link to="//docs.google.com/forms/d/1bAhArgs0iLrhyHGKG4Wag9Y6WILojm4JERVYnIEcRcY/edit">
+            <Link to="/financial_support">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
             </Link>
             </div></> : <><h2 className="light-blue-bg-text">Terms and Condition</h2> <p> terms and condition loading....</p> <div className="modal-btns">
@@ -131,7 +153,10 @@ const handleTerms =() =>{
         </div>
       </Modal>
       </header>
+
       {children}
+
+      {/* FOOTER */}
       <footer>
         <div
           className="about"

@@ -76,7 +76,7 @@ export default function Shop() {
           </div>
         </div>
       </div>
-      <div className="top">
+      {/* <div className="top">
         <div className="cat_dropdown">
           <button>
             <BiCategory className="icon" />
@@ -100,7 +100,7 @@ export default function Shop() {
             <RiAccountPinCircleFill className="icon" />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <main className="shop-main">
         {loading ? (
@@ -126,11 +126,13 @@ export default function Shop() {
                   <IoIosFlash className="icon" />
                   HEMODIALYSIS MACHINES
                 </h3>
+     <NavLink to ="/shop/hemodialysis">
                 <button>
                   <p>
                     View all <BsForwardFill className="icon" />
                   </p>
                 </button>
+                </NavLink>
               </div>
               <div className="products-container">
           <SimpleSlider />
@@ -167,11 +169,13 @@ export default function Shop() {
                   <BiCategory className="icon" />
                   ICU EQUIPMENTS
                 </h3>
+    <NavLink to="/shop/ICU Equipment">
                 <button>
                   <p>
                     View all <BsForwardFill className="icon" />
                   </p>
                 </button>
+                </NavLink>
               </div>
               <div className="products-container">
               <CenterSlider />
@@ -215,11 +219,13 @@ export default function Shop() {
                   <BsGiftFill className="icon" />
                   Diagnostic Imaging Equipment
                 </h3>
+    <NavLink to="/shop/Diagnostic Imaging Equipment">
                 <button>
                   <p>
                     View all <BsForwardFill className="icon" />
                   </p>
                 </button>
+                </NavLink>
               </div>
               <div className="item-cards">
                 {products
@@ -246,11 +252,13 @@ export default function Shop() {
                   <BsGiftFill className="icon" />
                   Operating Theatre Equipment
                 </h3>
+    <NavLink to="/shop/Operating Theatre Equipment">
                 <button>
                   <p>
                     View all <BsForwardFill className="icon" />
                   </p>
                 </button>
+                </NavLink>
               </div>
               <div className="item-cards">
                 {products

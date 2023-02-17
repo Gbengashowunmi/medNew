@@ -8,37 +8,14 @@ import OurServices from "../../component/ourServices/OurServices";
 import ReviewSlider from "../../component/reviews/ReviewSlider";
 import Statistics from "../../component/statistics/Statistics";
 import "./about.scss";
+import "../../component/pageHead/pageHead.scss"
 import TeamSlide from "../../component/teamMember/TeamSlide";
+import PageHead from "../../component/pageHead/PageHead";
 
 export default function About() {
   return (
     <HeadFoot>
-      <div className="about-head">
-        <div className="image">
-          <div className="overlay"></div>
-          <img src="/images/breadcrumb-image-1.jpg" alt="about-us" />
-          <div
-            className="texts"
-            data-aos="zoom-in-right"
-            data-aos-offset="50"
-            data-aos-delay="10"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <h2>About Us</h2>
-            <p>
-              <MdOutlineHome />
-              <NavLink to="/">
-                <span>HOME</span>
-              </NavLink>{" "}
-              <FaChevronRight />
-              <span className="active">ABOUT US</span>
-            </p>
-          </div>
-        </div>
-      </div>
+<PageHead heading="About Us" image="/images/breadcrumb-image-1.jpg" capsHead ="ABOUT US"/>
       <aside className="what-about-us">
         <div className="img">
           <img src="/images/about-hero-image.jpeg" alt="about-us" />
