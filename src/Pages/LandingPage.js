@@ -2,10 +2,10 @@ import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Carousel from "../component/Carousel";
+import FeaturedSlider from "../component/FeaturedSlider";
 import HeadFoot from "../component/HeadFoot";
 import Partners from "../component/partner/Partners";
 import ReviewSlider from "../component/reviews/ReviewSlider";
-import SimpleSlider from "../component/SimpleSlider";
 import Statistics from "../component/statistics/Statistics";
 import "./landing.scss";
 export default function LandingPage() {
@@ -40,8 +40,7 @@ export default function LandingPage() {
           >
             <h3>Explore our Specialized Solutions </h3>
             <p>
-              We offer various solutions to affordability and standard
-              healthcare products and services
+            Are you looking to cut cost without compromising value? Explore our various solutions to affordability. 
             </p>
             <button onClick={handleOpen}>Check it out</button>
           </div>
@@ -158,7 +157,7 @@ export default function LandingPage() {
           data-aos-once="true"
         >
           <div className="img">
-            <img src="/images/card_image_01.jpg" alt="aside" />
+            <img src="/images/hospital.jpg" alt="aside" />
           </div>
           <div className="text">
             <h2>Hospital Turnkey Project solutions</h2>
@@ -250,7 +249,7 @@ export default function LandingPage() {
           </Link>
         </div>
         <div className="products-container">
-          <SimpleSlider />
+          <FeaturedSlider />
         </div>
       </aside>
 

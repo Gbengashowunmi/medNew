@@ -6,3 +6,24 @@
     gap: 1rem;
     padding: 2rem 3rem;
 }
+
+@media (max-width:900px) {
+    .products_wrapper{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem 3rem;
+    }
+}
+@media (max-width:600px) {
+    .products_wrapper{
+        width: 100%;
+        height: fit-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        padding: 2rem 3rem;
+    }
+}

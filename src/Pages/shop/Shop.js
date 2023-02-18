@@ -135,7 +135,7 @@ export default function Shop() {
                 </NavLink>
               </div>
               <div className="products-container">
-          <SimpleSlider />
+          <SimpleSlider/>
 
               </div>
               <div className="header">

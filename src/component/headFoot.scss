@@ -62,18 +62,21 @@
     display: none;
   }
   ul {
+    // border: 2px solid red;
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
     padding: 0;
     margin: 0;
-    .shop_dropdown_wrapper{
       position: relative;
+
       .shop_dropdown{
-    box-shadow: 2px 4px 4px var(--clr-border-shadow);
+    box-shadow: 2px 4px 4px black;
     border-left: 1px solid var(--clr-border-shadow);
     position: absolute;
+    top: 20px;
+    left: 10%;
     z-index: 100;
     background-color: var(--clr-white);
     padding:  0;
@@ -81,7 +84,7 @@
     text-align: left;
     height: fit-content;
 width: fit-content;
-border-radius: 0 0 10px 10px;
+// border-radius: 0 0 10px 10px;
     ul{
       display: flex;
       flex-direction: column;
@@ -101,7 +104,6 @@ border-top: 1px solid var(--clr-border-shadow);
       color: var(--clr-white);
     }
   }
-    }
     .appointment-btn {
       background-color: var(--clr-primary);
       padding: 0.75rem 1.5rem;
@@ -371,40 +373,21 @@ footer {
       backdrop-filter: blur(6px);
       transform: translateX(100%);
       z-index: 98;
-      .shop_dropdown_wrapper{
-        position: relative;
-        .shop_dropdown{
-      box-shadow: 2px 4px 4px var(--clr-border-shadow);
-      border-left: 1px solid var(--clr-border-shadow);
-      // position: relative;
-      z-index: 100;
-      // background-color: var(--clr-white);
-      padding:  0;
-      margin-top: 2rem;
-      text-align: left;
-      height: fit-content;
-  width: fit-content;
-  border-radius: 0 0 10px 10px;
-      ul{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        width: 100%;
-  
-      }
-      li{
-        list-style: none;
-        width: 20rem;
-        padding: 5px 1rem;
-        color: var(--clr-secondary);
-  border-top: 1px solid var(--clr-border-shadow);
-      }
-      li:hover{
-        background-color: var(--clr-secondary);
-        color: var(--clr-white);
-      }
-    }
+      .shop_dropdown{
+        top: 35%;
+        left: -30%;
+        ul{
+    background-color: var(--clr-secondary);
+        }
+        li{
+          width: 18rem;
+          padding: 5px 1rem;
+    border-top: 1px solid var(--clr-border-shadow);
+        }
+        li:hover{
+          background-color: var(--clr-primary);
+          color: var(--clr-white);
+        }
       }
 
     }

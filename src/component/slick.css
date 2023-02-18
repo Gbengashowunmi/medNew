@@ -39,7 +39,8 @@
   position: relative;
   /* object-fit: cover; */
 }
-.carousel-item .overlay{
+.slick-list .carousel-item .overlay{
+  position: absolute;
   top:0;
   left:0;
   z-index: 80;

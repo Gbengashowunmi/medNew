@@ -40,10 +40,9 @@ export default function Carousel() {
           />
         </div>
         <div className="details">
-          <h1> Our expertise at your Service</h1>
+          <h1> TURNKEY PROJECTS. MEDICAL EQUIPMENT. TECHNICAL SERVICE. SPECIALIZED SOLUTIONS</h1>
           <p>
-            Medical equipment engineers design, develop, and maintain medical
-            equipment to ensure safety and effectiveness.
+          We are your no. 1 growth partners. Bringing you custom made solutions and latest innovations in Healthcare
           </p>
           {/* <button>Read More</button> */}
         </div>
@@ -60,7 +59,7 @@ export default function Carousel() {
           />
         </div>
         <div className="details">
-          <h1> We Sell Service, Excellent Service</h1>
+          <h1> WE SELL SERVICE, EXCELLENT SERVICE</h1>
           <p>
             Everyone of us from the least to the top understands that our
             customers are our greatest assets. That is why we empower them and

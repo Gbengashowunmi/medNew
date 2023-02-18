@@ -21,8 +21,6 @@ export default function HeadFoot({ children }) {
 const [showShopCategory, setShowShopCategory] = useState(false);
 const handleShop = ()=>{
   setShowShopCategory(!showShopCategory)
-  console.log(showShopCategory)
-  
 }
 // const {id} = useParams()
   // terms and cndition
@@ -40,6 +38,7 @@ const handleTerms =() =>{
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
+    setShowShopCategory(false)
   };
   // Sticky Menu Area
   useEffect(() => {
@@ -62,7 +61,7 @@ const handleTerms =() =>{
     <div className="head-foot-wrapper">
       <div
         onClick={handleToggle}
-        className={` ${isOpen ? "overlay" : "show"}`}
+        className={`${isOpen ? "overlay" : "show"}`}
       ></div>
       <header className="nav">
         <div className="comapany-icon">
@@ -89,6 +88,7 @@ const handleTerms =() =>{
           </NavLink>
           <div className="shop_dropdown_wrapper">
             <li onClick={handleShop}>Shop</li>
+          </div>
             {showShopCategory?<div className="shop_dropdown">
   <ul>
     <NavLink to="/shop">
@@ -112,7 +112,6 @@ const handleTerms =() =>{
 
   </ul>
 </div>:""}
-          </div>
           {/* </NavLink> */}
           <NavLink to="/service">
             <li>Service</li>

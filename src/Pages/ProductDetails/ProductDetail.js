@@ -43,7 +43,8 @@ export default function ProductDetail() {
             </p>
 }
             <p>Stock Available</p>
-            <Link to="//paystack.com/pay/medpau-buy-item"
+            <Link to ={`//api.whatsapp.com/send?phone=2349085323596&text=Hi+MedPau+International.+I'm+interested+in+buying+${product.name}.+How+much+does+it+cost?`} target="blank"
+            // "//paystack.com/pay/medpau-buy-item"
             ><Button variant="contained" className="addtocart-btn">
               Place Order
             </Button>

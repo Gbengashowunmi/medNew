@@ -117,17 +117,17 @@ better economy and quality of life.
         <h3>Explore Our Main Service</h3>
         <div className="services-wrapper">
           <OurServices
-            head="Project Management
+            head="Worldwide Delivery 
 "
-            decsription="From consultancy to renovations and procurement, we are your number one partners."
+            decsription="Swift delivery within Nigeria and across other African countries within estimated delivery date with equipment in great condition. "
           />
           <OurServices
-            head="Medical Equipment"
-            decsription="We distribute state-of-the-art medical equipment in Nigeria and West Africa."
+            head="Safe Payment "
+            decsription="Our financial platforms are very reliable and designed to ensure that all your financial transactions are secure."
           />
           <OurServices
-            head="Maintenance & Support"
-            decsription="Our qualified Service Engineers offer predictable maintenance and after sales support services"
+            head="Shop with confidence"
+            decsription="We offer competitive prices on our 100 million plus products and guarantee you great value for your money."
           />
         </div>
       </section>

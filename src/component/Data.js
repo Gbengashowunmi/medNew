@@ -4,6 +4,7 @@ const data = [
     image: "/images/product-images/Brand_New_Fresenius_4008S_Classix_(BP-Model).jpg",
     description: "",
     brand:"",
+    area:"featured",
     category: "hemodialysis",
     name: "Fresenius 4008S Classix (BP Model)",
     features: [
@@ -20,6 +21,7 @@ const data = [
     image: "/images/product-images/Refurbished_Nikkiso_DBB-07.jpg",
     description: "",
     brand:"",
+    area:"featured",
     category: "hemodialysis",
     name: " Nikkiso DBB-07",
     features:[
@@ -32,6 +34,7 @@ const data = [
     image: "/images/product-images/water_treatment_plant.jpeg",
     description: "",
     brand:"",
+    area:"featured",
     category: "hemodialysis",
     name: "Water Treatment Plant",
     features: [
@@ -67,6 +70,7 @@ const data = [
     image: "/images/product-images/Drager-Primus_Anasthesia_machine.jpeg",
     description: "",
     brand:"",
+    area:"featured",
     category: "ICU Equipment",
     name: " Drager Primus Anasthesia Machine  ",
     features:[""]
@@ -77,6 +81,7 @@ const data = [
     description: "",
     brand:"PG S70 COUNTRY: ITALY",
     category: "ICU Equipment",
+    area:"featured",
     name: "Patient Monitor",
     features: [
       "Pg S70 modular patient monitor complete",
@@ -164,6 +169,7 @@ const data = [
     image: "/images/product-images/renal_function_kit.jpeg",
     description: "",
     brand:"",
+    area:"featured",
     category: "hemodialysis",
     name: "Renal function kit",
     features:[""]
@@ -177,8 +183,6 @@ const data = [
     name: "Surgical Light ",
     features:["Ceiling-mounted, double-dome, two 50cm domes, each luminance at least 120000 Lux (54 bulbs) (108 bulbs)"]
   },
-  
-
   {
     id: 16,
     image: "/images/product-images/Operation_Table.png",
@@ -284,6 +288,7 @@ const data = [
     id: 26,
     image: "/images/product-images/x-ray.jpeg",
     description: "",
+    area:"featured",
     brand:"",
     category: "Diagnostic Imaging Equipment",
     name: "Radiography X-ray Machine",
@@ -294,6 +299,7 @@ const data = [
     image: "/images/product-images/ultrasound.jpeg",
     description: "",
     brand:"",
+    area:"featured",
     category: "Diagnostic Imaging Equipment",
     name: "Ultrasound",
     features:[""]
@@ -347,18 +353,6 @@ const data = [
     features:["10L Acidic hemodialysis concentrates", "Sodium	138	mmol/l","Potassium	2	mmol/l","Calcium	1.5	mmol/l","Magnesium 1	mmol/l","Bicarbonate 35	mmol/l","Acetate	3	mmol/l"]
 
   },
-  {
-    id: 33,
-    image: "/images/product-images/Citric_Acid_(10L x 2).jpeg",
-    description: "",
-    brand:"",
-    category: "hemodialysis consumeables",
-    name: "Citric Acid (10L x 2)",
-    features:""
-
-  },
-
-
 
   {
     id: 37,
@@ -372,16 +366,6 @@ const data = [
     ]
 
   },
-  // {
-  //   id: 38,
-  //   image: "/images/product-images/",
-  //   description: "",
-  //   brand:"",
-  //   category: "hemodialysis",
-  //   name: "Acid Mixer",
-  //   features:""
-
-  // },
 
 ];
 
