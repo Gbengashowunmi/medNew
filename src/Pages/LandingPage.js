@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Carousel from "../component/Carousel";
 import FeaturedSlider from "../component/FeaturedSlider";
 import HeadFoot from "../component/HeadFoot";
+import Newsletter from "../component/newsletter/Newsletter";
 import Partners from "../component/partner/Partners";
 import ReviewSlider from "../component/reviews/ReviewSlider";
 import Statistics from "../component/statistics/Statistics";
@@ -21,8 +22,10 @@ export default function LandingPage() {
   };
   return (
     <HeadFoot>
+      <Newsletter/>
       <main>
-        <Carousel />
+            
+            <Carousel />
       </main>
       <div className="hero-card-wrapper">
         <img src="/images/background_image_02.jpg" alt="card" />
@@ -242,7 +245,7 @@ export default function LandingPage() {
       <aside className="featured-post">
         <div className="head">
           <h6>FEATURE</h6>
-          <h2>Featured Products </h2>
+          <h2>Best Sellers </h2>
           <Link to="/shop">
             {" "}
             <button> SEE MORE</button>

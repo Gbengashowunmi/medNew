@@ -6,7 +6,7 @@ const data = [
     brand:"",
     area:"featured",
     category: "hemodialysis",
-    name: "Fresenius 4008S Classix (BP Model)",
+    name: "Refurbished Fresenius 4008S Classix (BP Model)",
     features: [
       "Dimension: 1370 x 500 x 650mm (H x W x D) (Including shunt interlock and pedestal) approx.",
       "Weight: 86kg",
@@ -23,7 +23,7 @@ const data = [
     brand:"",
     area:"featured",
     category: "hemodialysis",
-    name: " Nikkiso DBB-07",
+    name: "Refurbished Nikkiso DBB-07",
     features:[
       "Consistently high treatment quality", "DIASCAN quality control tool Conductivity- based and flow-rate controlled concentrate dosing Disinfection log","BICART cartridge holder Syringe pump","U9000 Ultrafilter and BPM Option","Alarm history"
     ]
@@ -302,7 +302,7 @@ const data = [
     area:"featured",
     category: "Diagnostic Imaging Equipment",
     name: "Ultrasound",
-    features:[""]
+    features:["Three probes: Convex, linear, and transvaginal","4D ultrasound Innovative RF Platform User-defined Protocols","Smart Measurements","Auto IMT","Auto Trace in PW/CW Mode","Preview allows extended view of the relationship of anatomical structures","Value-Added 4D Performance", "Flexible Display Format","15-inch high-resolution LCD monitor that rotates a full 180 degrees for enhanced ergonomics.","8-inch touch screen panel reduces physical strain.","Compact transducer connector for easy access","High quality processors for enhanced powerful performance.","Total Connectivity"]
   },
   {
     id: 28,

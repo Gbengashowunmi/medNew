@@ -322,26 +322,24 @@ export default function Shop() {
               <ShortMessage
                 header="Worldwide Delivery
 "
-                description="We offer competitive prices on our 100 million plus product any range.
+                description="
+                Swift delivery within Nigeria and across other African countries within estimated delivery date with equipment in great condition.
 "
               />
               <ShortMessage
                 header="Safe Payment
 "
-                description="We offer competitive prices on our 100 million plus product any range.
-"
+                description="Our financial platforms are very reliable and designed to ensure that all your financial transactions are secure."
               />
               <ShortMessage
                 header="Shop With Confidence
 "
-                description="We offer competitive prices on our 100 million plus product any range.
-"
+                description="We offer competitive prices on our 100 million plus products and guarantee you great value for your money."
               />
               <ShortMessage
                 header="24/7 Support
 "
-                description="We offer competitive prices on our 100 million plus product any range.
-"
+                description="Our lines are available 24/7 to attend to your complaints and ensure you are happy and satisfied"
               />
             </section>
           </>

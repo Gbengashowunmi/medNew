@@ -106,7 +106,7 @@ const handleTerms =() =>{
     </NavLink>
 
     <NavLink to="/shop/Operating Theatre Equipment">
-    <li>Go to Operation Equipment</li>
+    <li onClick={handleShop}>Go to Operation Equipment</li>
     </NavLink>
 
 
