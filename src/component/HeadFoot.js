@@ -14,6 +14,7 @@ import { MdEmail, MdLocationPin } from "react-icons/md";
 import { Link, NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
 import Modal from '@mui/material/Modal';
+import Newsletter from "./newsletterForm/Newsletter";
 
 export default function HeadFoot({ children }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -157,6 +158,8 @@ const handleTerms =() =>{
 
       {/* FOOTER */}
       <footer>
+     <div className="footer_newsletter">
+      <Newsletter/></div> 
         <div
           className="about"
           data-aos="zoom-in"

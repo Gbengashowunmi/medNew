@@ -6,7 +6,7 @@ import { Button, TextField } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import { MdOutlineHome } from 'react-icons/md';
 import { FaChevronRight } from 'react-icons/fa';
-export default function ContactUs() {
+export default function HealthVestForm() {
 
   function sendEmail(e) {
     e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it

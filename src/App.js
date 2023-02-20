@@ -14,9 +14,10 @@ import About from "./Pages/about/About";
 import Mgtp from "./Pages/mgtp/Mgtp";
 import Payment from "./Pages/payment/Payment";
 import Event from "./Pages/event/Event";
-import ContactUs from "./Pages/conatct_form/ContactUs";
+
 import Category from "./Pages/category/Category";
 import ChatMuna from "./component/ChatMuna";
+import HealthVestForm from "./Pages/healthvest_form/HealthVestForm";
   
 AOS.init();
 function App() {
@@ -34,7 +35,7 @@ function App() {
         <Route path="payment" element={<Payment/>}></Route>
         <Route path="mgtp" element={<Mgtp/>}></Route>
         <Route path="event" element={<Event/>}></Route>
-        <Route path="financial_support" element={<ContactUs/>}></Route>
+        <Route path="financial_support" element={<HealthVestForm/>}></Route>
         <Route path="faq" element={<Faq/>}></Route>
         <Route path="details/:id" element={<ProductDetail/>}></Route>
         <Route path="shop/:category" element={<Category/>}></Route>
