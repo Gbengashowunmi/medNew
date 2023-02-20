@@ -16,11 +16,13 @@ import Payment from "./Pages/payment/Payment";
 import Event from "./Pages/event/Event";
 import ContactUs from "./Pages/conatct_form/ContactUs";
 import Category from "./Pages/category/Category";
+import ChatMuna from "./component/ChatMuna";
   
 AOS.init();
 function App() {
   return (
     <div className="App">
+      <ChatMuna/>
       <BrowserRouter>
       <ScrollToTop className="scroll_up" smooth={true} />
       <ScrollToTopNav/>
