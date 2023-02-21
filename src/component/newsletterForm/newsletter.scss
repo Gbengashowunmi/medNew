@@ -1,3 +1,11 @@
+.message{
+    background-color: var(--clr-secondary);
+    color: white;
+    width: fit-content;
+    padding: 3px 10px;
+    margin: auto;
+}
+
 .newsletter{
     width: 80%;
     height: fit-content;
@@ -9,6 +17,9 @@
     gap: 20px;
     // margin: 10px;
 margin: auto;
+input{
+    background-color: var(--clr-white);
+}
 }
 h4{
     color: var(--clr-secondary);
