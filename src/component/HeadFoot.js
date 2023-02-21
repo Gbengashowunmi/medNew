@@ -95,19 +95,19 @@ const handleTerms =() =>{
     <NavLink to="/shop">
     <li onClick={handleShop}>See All Products</li>
     </NavLink>
-     <NavLink to ="/shop/hemodialysis">
+     <NavLink to ="/shop/Hemodialysis">
      <li onClick={handleShop}>Go to Hemodialysis</li>
      </NavLink>
 
     <NavLink to="/shop/ICU Equipment">
-    <li onClick={handleShop}>Go to ICU Equipments</li>
+    <li onClick={handleShop}>Go to ICU Equipment</li>
     </NavLink>
     <NavLink to="/shop/Diagnostic Imaging Equipment">
-    <li onClick={handleShop}>Go to Diagnostic Imaging Equipments</li>
+    <li onClick={handleShop}>Go to Diagnostic Imaging Equipment</li>
     </NavLink>
 
     <NavLink to="/shop/Operating Theatre Equipment">
-    <li onClick={handleShop}>Go to Operating Equipments</li>
+    <li onClick={handleShop}>Go to Operating Theater Equipment</li>
     </NavLink>
 
 

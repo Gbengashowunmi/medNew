@@ -5,7 +5,7 @@ const data = [
     description: "",
     brand:"",
     area:"featured",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Refurbished Fresenius 4008S Classix (BP Model)",
     features: [
       "Dimension: 1370 x 500 x 650mm (H x W x D) (Including shunt interlock and pedestal) approx.",
@@ -22,7 +22,7 @@ const data = [
     description: "",
     brand:"",
     area:"featured",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Refurbished Nikkiso DBB-07",
     features:[
       "Consistently high treatment quality", "DIASCAN quality control tool Conductivity- based and flow-rate controlled concentrate dosing Disinfection log","BICART cartridge holder Syringe pump","U9000 Ultrafilter and BPM Option","Alarm history"
@@ -35,7 +35,7 @@ const data = [
     description: "",
     brand:"",
     area:"featured",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Water Treatment Plant",
     features: [
       "This WRO System supplies 12 dialysis machines.",
@@ -54,7 +54,7 @@ const data = [
     description: "",
     brand:"",
     name: "Manual Dialysis Chair",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     features: [
       "Economical and comfortable option for dialysis patients and caregivers.",
       "Barrier free accessibility from the side",
@@ -170,7 +170,7 @@ const data = [
     description: "",
     brand:"",
     area:"featured",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Renal function kit",
     features:[""]
   },
@@ -252,7 +252,7 @@ const data = [
     image: "/images/product-images/Fully_Automated_Dialysis_Couch.jpg",
     description: "",
     brand:"",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Fully Automated Dialysis Couch",
     features:["Estimated lead time: 40 days", "European 4 sections ergonomics design", "Baosteel from Fortune Global 500", "Environmental plastic can be sterilized in 100°C, tensile up to 30MPa", "Panasonic Robotic ensure", "360° full smooth welding"]
   },
@@ -359,7 +359,7 @@ const data = [
     image: "/images/product-images/blue_gate.png",
     description: "",
     brand:"",
-    category: "hemodialysis",
+    category: "Hemodialysis",
     name: "Blue gate UPS(3.0KV A)",
     features:[
       "Phase: Single phase with ground","Capacity (VA/Watts):3000va/2700W.", "Nominal Voltage: 200/208/2220/230/240 VAC","Mode: AC","Operating frequency range: 40- 70Hz","Battery type (Units)=12V/9AH (6 units)","Typical Recharge Time:4H to recover capacity."
