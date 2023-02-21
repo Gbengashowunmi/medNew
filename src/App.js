@@ -25,7 +25,9 @@ function App() {
     <div className="App">
       <ChatMuna/>
       <BrowserRouter>
+      {/* scroll to top icon  */}
       <ScrollToTop className="scroll_up" smooth={true} />
+      {/* scroll to top of the page on new page  */}
       <ScrollToTopNav/>
 
       <Routes>

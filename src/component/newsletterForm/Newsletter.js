@@ -18,9 +18,9 @@ export default function Newsletter() {
 
   return (
     <>
-    <h4>Subscribe to our news letter</h4>
+    <h4>To receive updates, kindly subscribe to our Newsletter</h4>
     <form className='newsletter' onSubmit={sendEmail}>
-        <TextField id="outlined-basic" label="Enter your Email" variant="outlined" required type="email" name="email"/>
+        <TextField id="outlined-basic" label="Enter your Email" variant="outlined" required type="email" name="email" className='input'/>
         <Button type="submit"  variant="contained" className="appointment-btn">Subscribe</Button>
     </form>
     </>

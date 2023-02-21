@@ -29,6 +29,7 @@ position: relative;
   color: white;
   text-align: center;
   position: fixed;
+  bottom: 15%;
 }
 
 .App-link {

@@ -103,11 +103,11 @@ const handleTerms =() =>{
     <li onClick={handleShop}>Go to ICU Equipments</li>
     </NavLink>
     <NavLink to="/shop/Diagnostic Imaging Equipment">
-    <li onClick={handleShop}>Go to Diagnostic Imaging Equipmen</li>
+    <li onClick={handleShop}>Go to Diagnostic Imaging Equipments</li>
     </NavLink>
 
     <NavLink to="/shop/Operating Theatre Equipment">
-    <li onClick={handleShop}>Go to Operation Equipment</li>
+    <li onClick={handleShop}>Go to Operating Equipments</li>
     </NavLink>
 
 
@@ -157,9 +157,9 @@ const handleTerms =() =>{
       {children}
 
       {/* FOOTER */}
-      <footer>
      <div className="footer_newsletter">
       <Newsletter/></div> 
+      <footer>
         <div
           className="about"
           data-aos="zoom-in"

@@ -72,7 +72,7 @@ const data = [
     brand:"",
     area:"featured",
     category: "ICU Equipment",
-    name: " Drager Primus Anasthesia Machine  ",
+    name: "Refurbished Drager Primus Anasthesia Machine  ",
     features:[""]
   },
   {
