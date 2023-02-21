@@ -46,7 +46,7 @@ color: white !important;
     height: 30px;
     display: flex;
     justify-content: left;
-    margin-left: 2rem;
+    padding-left: 2rem;
     gap: 5px;
     p {
       border-radius: 3px 3px 0 0;
@@ -120,7 +120,6 @@ transition: .6s;
       margin-top: 1rem;
       padding: 0 2rem;
       display: flex;
-      margin-left: 0;
       gap: 3px;
     }
    
