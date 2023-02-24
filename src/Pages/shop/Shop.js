@@ -126,7 +126,7 @@ export default function Shop() {
                   <IoIosFlash className="icon" />
                   HEMODIALYSIS MACHINES
                 </h3>
-     <NavLink to ="/shop/Hemodialysis">
+     <NavLink to ="/shop/Hemodialysis" >
                 <button>
                   <p>
                     View all <BsForwardFill className="icon" />
