@@ -11,7 +11,6 @@ export default function Newsletter() {
     
     function sendEmail(e) {
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-    
         emailjs.sendForm('service_9hc60zg', 'template_racbhye', e.target, '1C9x_ChYylYmwyitQ')
           .then((result) => {
               setShowMessage(true)
