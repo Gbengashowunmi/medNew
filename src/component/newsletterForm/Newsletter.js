@@ -22,8 +22,8 @@ export default function Newsletter() {
                   window.location.reload()
            }, 3000);
         }, (error) => {
+          setMessage(`${error.text}, Try again`)
               console.log(error.text);
-              setMessage("Error, Try again")
           });
       }
 
