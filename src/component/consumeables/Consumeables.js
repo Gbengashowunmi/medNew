@@ -5,7 +5,10 @@ export default function Consumeables({image,productName, id}) {
   return (
     <div className='consumeable_container'>
         <div className='image'>
-          <Link to={`/details/${id}`}>  <img src={image} alt="product" />
+          <Link to={`/details/${id}`}>  
+          	<source type="image/webp" srcSet="image.webp"/>
+
+          <img src={image} alt="product" />
           </Link>
         </div>
         <div className='description'>

@@ -34,7 +34,7 @@ const [error, setError] =useState("")
 
 
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="Payment" description="medpau international Limited Payment page">
     <div className="payment_form_wrapper">
       <h3 className='light-blue-bg-text'>Payment Page</h3>
       <p>Kindly enter your details below to make payment </p>

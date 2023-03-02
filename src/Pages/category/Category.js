@@ -16,7 +16,7 @@ export default function Category() {
         // console.log(useParams());
         const product = data.filter(singleProduct => singleProduct.category === category)
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle={category} description={`${category} category in medpau online store`}>
 <PageHead heading={category} image="/images/breadcrumb-image-1.jpg" capsHead ={category}/>
 <div className="products_wrapper">
 {product.map(eachProduct=>{

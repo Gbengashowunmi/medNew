@@ -49,10 +49,11 @@ export default function Shop() {
 
 
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="Online store" description="Online store/shop page of medpau international Limited">
       <div className="about-head">
         <div className="image">
           <div className="overlay"></div>
+          	<source type="image/webp" srcSet="image.webp"/>
           <img src="/images/breadcrumb-image-1.jpg" alt="about-us" />
           <div
             className="texts"
@@ -208,6 +209,7 @@ export default function Shop() {
               <div className="banner1"></div>
               <div className="banner2">
                 <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
                   <img src="/images/sales.png" alt="banner2" />
                 </div>
               </div>

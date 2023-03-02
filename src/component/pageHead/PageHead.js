@@ -9,6 +9,7 @@ export default function PageHead({heading, image, capsHead}) {
     <div className="about-head">
     <div className="image">
       <div className="overlay"></div>
+          	<source type="image/webp" srcSet="image.webp"/>
       <img src={image} alt="about-us" />
       <div
         className="texts"

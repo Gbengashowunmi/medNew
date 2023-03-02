@@ -20,12 +20,13 @@ export default function LandingPage() {
     setReadMore(!readMore);
   };
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="Home Page" description="Index/Home page of medpau international Limited">
       <main>
             
             <Carousel />
       </main>
       <div className="hero-card-wrapper">
+          	<source type="image/webp" srcSet="image.webp"/>
         <img src="/images/background_image_02.jpg" alt="card" />
         <div className="overlay"></div>
         <div className="hero-cards">
@@ -83,7 +84,7 @@ export default function LandingPage() {
             <p>
               Is your budget restricted? We offer Financing solutions for your projects and equipment procurement
             </p>
-            <Link to="/financial_support">
+            <Link to="/financial-support">
               <button>Reach out to us</button>
             </Link>
           </div>
@@ -158,6 +159,7 @@ export default function LandingPage() {
           data-aos-once="true"
         >
           <div className="img">
+          	<source type="image/webp" srcSet="image.webp"/>
             <img src="/images/hospital.jpg" alt="aside" />
           </div>
           <div className="text">
@@ -210,6 +212,7 @@ export default function LandingPage() {
           data-aos-once="true"
         >
           <div className="img">
+          	<source type="image/webp" srcSet="image.webp"/>
             <img src="/images/our_process.jpeg" alt="aside" />
           </div>
           <div className="text">
@@ -263,78 +266,7 @@ export default function LandingPage() {
         <div className="partner_wrapper">
           <Partners />
           </div>
-          {/* <div className="partner_wrapper">
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner1.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner2.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner3.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner4.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner5.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner6.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner7.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner8.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner9.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div className="partner_image">
-                <div className="image">
-                  <img src="/images/partners/partner10.jpeg" alt="partner" />
-                </div>
-              </div>
-            </div>
-          </div> */}
+         
         </div>
       </aside>
     </HeadFoot>

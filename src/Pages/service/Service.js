@@ -10,11 +10,12 @@ import "./service.scss"
 
 export default function Service() {
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="Services" description="service page of medpau international Limited. List of Technical services offered by medpau">
       <div className="about-head">
 
         <div className="image">
           <div className="overlay"></div>
+          	<source type="image/webp" srcSet="image.webp"/>
           <img src="/images/breadcrumb-image-1.jpg" alt="about-us" />
           <div
             className="texts"

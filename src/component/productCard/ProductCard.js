@@ -11,6 +11,7 @@ export default function ProductCard({ image, productName,id }) {
             <p>SALE!</p>
           </div>
         <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
           <img src={image} alt="product-pic" />
           
 

@@ -1,0 +1,27 @@
+form{
+    width: 100%;
+    .input_field{
+        text-align: left;
+    width: 60%;
+    height: fit-content;
+    // border: 2px solid red;
+    border-bottom: 1px solid var(--clr-primary);
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    margin: 20px auto;
+    // gap: 1rem;
+    // align-items: center;
+    h4{
+    margin:  0;
+    color: var(--clr-secondary);
+
+    }
+    .input{
+        width: 100%;
+        // margin: auto;
+        margin: 0;
+    }
+}
+}

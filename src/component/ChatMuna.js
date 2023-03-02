@@ -14,7 +14,9 @@ export class ChatMuna extends Component {
     }
   render() {
     return (
-      <></>
+      <>
+      
+      </>
     )
   }
 }

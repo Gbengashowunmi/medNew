@@ -14,10 +14,11 @@ import PageHead from "../../component/pageHead/PageHead";
 
 export default function About() {
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="About Page" description="About page of medpau international Limited">
 <PageHead heading="About Us" image="/images/breadcrumb-image-1.jpg" capsHead ="ABOUT US"/>
       <aside className="what-about-us">
         <div className="img">
+          	<source type="image/webp" srcSet="image.webp"/>
           <img src="/images/about-hero-image.jpeg" alt="about-us" />
         </div>
         <div className="details">

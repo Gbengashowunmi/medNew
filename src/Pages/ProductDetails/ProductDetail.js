@@ -23,10 +23,11 @@ export default function ProductDetail() {
   const [product] = data.filter(singleProduct => singleProduct.id === +id)
 
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle={id | product.name} description={`Detail page for ${product.name} with id ${id} product from medpau international Limited`}>
       <div className="product-page">
         <section className="hero-section">
           <div className="product-img">
+          	<source type="image/webp" srcSet="image.webp"/>
               <img
                 src={product.image}
                 alt="product"
@@ -43,7 +44,7 @@ export default function ProductDetail() {
             </p>
 }
             <p>Stock Available</p>
-            <Link to ={`//api.whatsapp.com/send?phone=2349085323596&text=Hi+MedPau+International.+I'm+interested+in+buying+${product.name}.+How+much+does+it+cost?`} target="blank"
+            <Link to ={`//api.whatsapp.com/send?phone=2349085323596&text=Hi+MedPau+International.+I'm+interested+in+buying+${product.name}.+How+much+does+it+cost?`} target="blank" rel="noopener noreferrer"
             // "//paystack.com/pay/medpau-buy-item"
             ><Button variant="contained" className="addtocart-btn">
               Place Order

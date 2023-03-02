@@ -7,5 +7,7 @@
   RewriteCond %{REQUEST_FILENAME} !-l
   RewriteRule . /index.html [L]
   RewriteCond %{HTTPS} !=on 
-  RewriteRule ^/?(.*) https://www.medpau.net /$1 [R,L] 
+  <!-- RewriteRule ^/?(.*) https://www.medpau.net /$1 [R,L]  -->
+  RewriteCond %{HTTP_HOST} !^www.medpau.net$ [NC]
+RewriteRule ^(.*)$ https://www.medpau.net/$1 [L,R=301]
 </IfModule>

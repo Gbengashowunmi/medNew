@@ -14,7 +14,7 @@ export default function ControlledAccordions() {
   };
 
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="FAQ" description="medpau international Limited Frequently Asked Questions">
     <div className='faq'>
       <h2>Frequently Asked Questions</h2> 
       <Accordion expanded={expanded === 'panel1'} onChange={handleChange('panel1')} className="accordion">

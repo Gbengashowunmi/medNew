@@ -56,6 +56,7 @@ export default function Partners() {
        return ( 
       <div className="partner_image" key={partner.id}>
         <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
         <img src={partner.image} alt="partner" />
         </div>
       </div>

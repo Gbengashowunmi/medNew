@@ -15,8 +15,9 @@ import { Link, NavLink } from "react-router-dom";
 import { Button } from "@mui/material";
 import Modal from '@mui/material/Modal';
 import Newsletter from "./newsletterForm/Newsletter";
+import { Helmet } from "react-helmet";
 
-export default function HeadFoot({ children }) {
+export default function HeadFoot({ children, pageTitle, description }) {
   const [isOpen, setIsOpen] = useState(false);
 // show and hide shop Category handler and state 
 const [showShopCategory, setShowShopCategory] = useState(false);
@@ -60,6 +61,11 @@ const handleTerms =() =>{
 
   return (
     <div className="head-foot-wrapper">
+      <Helmet>
+        <title>Medpau || {pageTitle}</title>
+        <meta name='description' content={description} />
+
+      </Helmet>
       <div
         onClick={handleToggle}
         className={`${isOpen ? "overlay" : "show"}`}
@@ -67,8 +73,9 @@ const handleTerms =() =>{
       <header className="nav">
         <div className="comapany-icon">
           <div className="logo">
-            {" "}
             <Link to="/">
+          	<source type="image/webp" srcSet="image.webp"/>
+
               <img
                 src="/images/WhatsApp_Image_2023-01-23_at_9.13.05_AM-removebg-preview.png"
                 alt="logo"
@@ -100,7 +107,7 @@ const handleTerms =() =>{
      </NavLink>
 
     <NavLink to="/shop/ICU Equipment">
-    <li onClick={handleShop}>Go to ICU Equipment</li>
+       <li onClick={handleShop}>Go to ICU Equipment</li>
     </NavLink>
     <NavLink to="/shop/Diagnostic Imaging Equipment">
     <li onClick={handleShop}>Go to Diagnostic Imaging Equipment</li>
@@ -140,12 +147,12 @@ const handleTerms =() =>{
            {!showTerms? <>  <h2 className="light-blue-bg-text">What is Health Vest?</h2>
             <p>Health Vest is a medical equipment financing platform which facilitates convenient way for individuals and businesses to purchase the necessary goods they need without breaking their bank. With this platform, users are able to spread out payments over a length of time up to five years at competitive interest rates with no hidden costs. This makes it easier for consumers or companies who didn't have the money upfront, but still needed these products, to acquire them - especially those that can be quite costly such as medical imaging devices, diagnostic instruments, ventilators and more. Furthermore, customers have access to quality refurbished items which would further lower cost and allow buyers affordable payment options while adhering to regulatory industry standards we must meet in order achieve safe use and maintenance of our products.</p> <div className="modal-btns">
             <Button className="appointment-btn" onClick={handleTerms}>Terms and Conditions</Button>
-            <Link to="/financial_support">
+            <Link to="/financial-support">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
             </Link>
             </div></> : <><h2 className="light-blue-bg-text">Terms and Condition</h2> <p> terms and condition loading....</p> <div className="modal-btns">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Close</Button>
-            <Link to="/financial_support">
+            <Link to="/financial-support">
             <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
             </Link>
             </div> </> }
@@ -218,20 +225,20 @@ const handleTerms =() =>{
           </div>
           <ul>
             
-            <NavLink to="//medpauimpacts.com/womens-network/" target="blank">
+            <NavLink to="//medpauimpacts.com/womens-network/" target="blank" rel="noopener noreferrer">
               {" "}
               <li>
                 <FaChevronRight />
                 Medpau Women Network
               </li>
             </NavLink>
-            <NavLink to="//medpauimpacts.com/mgtp/" target="blank">
+            <NavLink to="//medpauimpacts.com/mgtp/" target="blank" rel="noopener noreferrer">
               <li>
                 <FaChevronRight />
                 Medpau Graduate Training Program
               </li>
             </NavLink>
-            <NavLink to="//medpauimpacts.com/wkd/" target="blank">
+            <NavLink to="//medpauimpacts.com/wkd/" target="blank" rel="noopener noreferrer">
               {" "}
               <li>
                 <FaChevronRight />

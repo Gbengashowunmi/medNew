@@ -23,7 +23,7 @@ const firebaseConfig = {
 
   // collection reference 
   // export const colRef = collection(db, "books")
-  export const colRef = collection(db, "newsletter-email-list")
+  // export const colRef = collection(db, "newsletter-email-list")
 
 
 

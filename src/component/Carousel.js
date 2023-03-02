@@ -18,6 +18,7 @@ export default function Carousel() {
       <div className="carousel-item">
         <div className="overlay"></div>
         <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
           <img
             className="d-block w-100"
             src="/images/her-bg-slider.jpg"
@@ -33,6 +34,7 @@ export default function Carousel() {
       <div className="overlay"></div>
 
         <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
           <img
             className="d-block w-100"
             src="/images/hero-image11111.jpg"
@@ -52,6 +54,7 @@ export default function Carousel() {
       <div className="overlay"></div>
 
         <div className="image">
+          	<source type="image/webp" srcSet="image.webp"/>
           <img
             className="d-block w-100"
             src="/images/hero_home_01.jpg"

@@ -6,7 +6,10 @@ export default function ItemCard({image,productName, id}) {
   return (
     <div className='item_container'>
         <div className='image'>
-          <Link to={`/details/${id}`}>  <img src={image} alt="product" />
+          <Link to={`/details/${id}`}>  
+          	<source type="image/webp" srcSet="image.webp"/>
+          
+          <img src={image} alt="product" />
           </Link>
         </div>
         <div className='description'>

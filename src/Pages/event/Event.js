@@ -24,10 +24,11 @@ export default function Event() {
   };
 
   return (
-    <HeadFoot>
+    <HeadFoot pageTitle="Events" description="Events page of medpau international Limited">
             <div className="about-head">
         <div className="image">
           <div className="overlay"></div>
+          	<source type="image/webp" srcSet="image.webp"/>
           <img src="/images/iwd.jpeg" alt="about-us" />
           <div
             className="texts"
