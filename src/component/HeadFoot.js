@@ -124,7 +124,9 @@ const handleTerms =() =>{
           <NavLink to="/service">
             <li>Service</li>
           </NavLink>
+          <NavLink to="/our-blogs">
           <li>Our Blog</li>
+          </NavLink>
           <NavLink to="/mgtp">
           <li>Careers</li>
           </NavLink>
@@ -291,7 +293,7 @@ const handleTerms =() =>{
           </div>
           <ul>
             <li>
-              <FaPhone /> <a href="tel:+2348068516780"><span>+234806 851 6780</span> </a> 
+              <FaPhone /> <a href="tel:+2349085323596"><span>+234908 532 3596</span> </a> 
             </li>
             <a href="tel:+233256885072"><li> <FaPhone /> <span>+23325 688 5072</span> </li>
             </a>

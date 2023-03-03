@@ -20,6 +20,7 @@ import Category from "./Pages/category/Category";
 import HealthVestForm from "./Pages/healthvest_form/HealthVestForm";
 import DeliveryForm from "./Pages/delivery/DeliveryForm";
 import Error404 from "./Pages/404/Error404";
+import OurBlogs from "./Pages/ourBlogs/OurBlogs";
   
 AOS.init();
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="mgtp" element={<Mgtp/>}></Route>
         <Route path="event" element={<Event/>}></Route>
         <Route path="financial-support" element={<HealthVestForm/>}></Route>
+        <Route path="our-blogs" element={<OurBlogs/>}></Route>
         <Route path="faq" element={<Faq/>}></Route>
         <Route path="details/:id" element={<ProductDetail/>}></Route>
         <Route path="shop/:category" element={<Category/>}></Route>

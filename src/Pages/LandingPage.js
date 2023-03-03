@@ -1,6 +1,7 @@
 import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Blog from "../component/blog/Blog";
 import Carousel from "../component/Carousel";
 import FeaturedSlider from "../component/FeaturedSlider";
 import HeadFoot from "../component/HeadFoot";
@@ -267,6 +268,22 @@ export default function LandingPage() {
           <Partners />
           </div>
          
+        </div>
+      </aside>
+
+      <aside className="blogs">
+                <div className="head">
+          <h6>BLOGS</h6>
+          <h2>Our Blogs</h2>
+                    <Link to="/our-blogs">
+            <button> See Blogs</button>
+          </Link>
+        </div>
+        <div className="blogs_container">
+        <Blog/>
+        <Blog/>
+        <Blog/>
+        <Blog/>
         </div>
       </aside>
     </HeadFoot>
