@@ -1,7 +1,7 @@
 import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Blog from "../component/blog/Blog";
+// import Blog from "../component/blog/Blog";
 import Carousel from "../component/Carousel";
 import FeaturedSlider from "../component/FeaturedSlider";
 import HeadFoot from "../component/HeadFoot";
@@ -21,13 +21,14 @@ export default function LandingPage() {
     setReadMore(!readMore);
   };
   return (
-    <HeadFoot pageTitle="Home Page" description="Index/Home page of medpau international Limited">
+    <HeadFoot
+      pageTitle="International Limited Home Page"
+      description="Welcome to medpau international limited, we offer sales of medical equipments, technical services and financial support for instalmental purchase of expensive medical equipments/facilities.">
       <main>
-            
-            <Carousel />
+        <Carousel />
       </main>
       <div className="hero-card-wrapper">
-          	<source type="image/webp" srcSet="image.webp"/>
+        <source type="image/webp" srcSet="image.webp" />
         <img src="/images/background_image_02.jpg" alt="card" />
         <div className="overlay"></div>
         <div className="hero-cards">
@@ -39,11 +40,11 @@ export default function LandingPage() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-          >
+            data-aos-once="false">
             <h3>Explore our Specialized Solutions </h3>
             <p>
-            Are you looking to cut cost without compromising value? Explore our various solutions to affordability. 
+              Are you looking to cut cost without compromising value? Explore
+              our various solutions to affordability.
             </p>
             <button onClick={handleOpen}>Check it out</button>
           </div>
@@ -53,8 +54,7 @@ export default function LandingPage() {
             open={open}
             onClose={handleClose}
             aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
+            aria-describedby="modal-modal-description">
             <div className="healthvest_wrapper our_specialized">
               <div className="cancel" onClick={handleClose}>
                 X
@@ -79,11 +79,11 @@ export default function LandingPage() {
             data-aos-duration="1200"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-          >
-            <h3>Need financing?</h3> <br/>
+            data-aos-once="false">
+            <h3>Need financing?</h3> <br />
             <p>
-              Is your budget restricted? We offer Financing solutions for your projects and equipment procurement
+              Is your budget restricted? We offer Financing solutions for your
+              projects and equipment procurement
             </p>
             <Link to="/financial-support">
               <button>Reach out to us</button>
@@ -97,8 +97,7 @@ export default function LandingPage() {
             data-aos-duration="1400"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-          >
+            data-aos-once="false">
             <h3>Have a technical complain?</h3>
             <p>
               We provide unmatched after sales support, 24/7 online support and
@@ -120,8 +119,7 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <h3>Working Hours</h3>
           <hr />
           <h6>
@@ -157,10 +155,9 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <div className="img">
-          	<source type="image/webp" srcSet="image.webp"/>
+            <source type="image/webp" srcSet="image.webp" />
             <img src="/images/hospital.jpg" alt="aside" />
           </div>
           <div className="text">
@@ -169,32 +166,25 @@ export default function LandingPage() {
               Our commitment to promoting brilliant healthcare innovations, and
               increasing the access to affordable and quality healthcare is
               pivoted at improving the quality of life{" "}
-              {readMore
-                ? <ul>
+              {readMore ? (
+                <ul>
                   <li>
-                  Feasibility & Project Master -Planning Architectural Planning
+                    Feasibility & Project Master -Planning Architectural
+                    Planning
                   </li>
+                  <li>Mechanical, Electrical and Plumbing Engineering</li>
+                  <li>Hospital Organization and Staffing Project Management</li>
                   <li>
-                  Mechanical, Electrical and Plumbing Engineering
+                    Medical Equipment Supply, Installation and after Sales
+                    Service and Maintenance contract
                   </li>
-                  <li>
-                  Hospital Organization and Staffing Project Management
-
-                  </li>
-                  <li>
-                  Medical Equipment Supply, Installation and after Sales Service and Maintenance contract
-
-                  </li>
-                  <li>
-                  Technical Training
-                  </li>
-                  <li>
-                  Human Resources Training 
-                  </li>
-                  <li> Education Hospital Management services
-                  </li>
+                  <li>Technical Training</li>
+                  <li>Human Resources Training</li>
+                  <li> Education Hospital Management services</li>
                 </ul>
-                : "..."}
+              ) : (
+                "..."
+              )}
               <span className="read-more" onClick={handleclick}>
                 {" "}
                 {readMore ? "Read Less" : "Read More"}
@@ -210,10 +200,9 @@ export default function LandingPage() {
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <div className="img">
-          	<source type="image/webp" srcSet="image.webp"/>
+            <source type="image/webp" srcSet="image.webp" />
             <img src="/images/our_process.jpeg" alt="aside" />
           </div>
           <div className="text">
@@ -264,28 +253,27 @@ export default function LandingPage() {
           <h2>Our Partners</h2>
         </div>
         <div className="products-container">
-        <div className="partner_wrapper">
-          <Partners />
+          <div className="partner_wrapper">
+            <Partners />
           </div>
-         
         </div>
       </aside>
 
-      <aside className="blogs">
-                <div className="head">
+      {/* <aside className="blogs">
+        <div className="head">
           <h6>BLOGS</h6>
           <h2>Our Blogs</h2>
-                    <Link to="/our-blogs">
+          <Link to="/our-blogs">
             <button> See Blogs</button>
           </Link>
         </div>
         <div className="blogs_container">
-        <Blog/>
-        <Blog/>
-        <Blog/>
-        <Blog/>
+          <Blog />
+          <Blog />
+          <Blog />
+          <Blog />
         </div>
-      </aside>
+      </aside> */}
     </HeadFoot>
   );
 }

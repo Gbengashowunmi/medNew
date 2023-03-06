@@ -62,7 +62,7 @@ const handleTerms =() =>{
   return (
     <div className="head-foot-wrapper">
       <Helmet>
-        <title>Medpau || {pageTitle}</title>
+        <title>Medpau {pageTitle}</title>
         <meta name='description' content={description} />
 
       </Helmet>
