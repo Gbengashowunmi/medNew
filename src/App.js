@@ -16,7 +16,7 @@ import Payment from "./Pages/payment/Payment";
 import Event from "./Pages/event/Event";
 
 import Category from "./Pages/category/Category";
-// import ChatMuna from "./component/ChatMuna";
+import ChatMuna from "./component/ChatMuna";
 import HealthVestForm from "./Pages/healthvest_form/HealthVestForm";
 import DeliveryForm from "./Pages/delivery/DeliveryForm";
 import Error404 from "./Pages/404/Error404";
@@ -26,7 +26,7 @@ AOS.init();
 function App() {
   return (
     <div className="App">
-      {/* <ChatMuna/> */}
+      <ChatMuna/>
       <BrowserRouter>
       {/* scroll to top icon  */}
       <ScrollToTop className="scroll_up" smooth={true} />
