@@ -63,18 +63,16 @@ const handleTerms =() =>{
     <div className="head-foot-wrapper">
       <Helmet>
         <title>Medpau {pageTitle}</title>
-        <meta name='description' content={description} />
-
+        <meta name="description" content={description} />
       </Helmet>
       <div
         onClick={handleToggle}
-        className={`${isOpen ? "overlay" : "show"}`}
-      ></div>
+        className={`${isOpen ? "overlay" : "show"}`}></div>
       <header className="nav">
         <div className="comapany-icon">
           <div className="logo">
             <Link to="/">
-          	<source type="image/webp" srcSet="image.webp"/>
+              <source type="image/webp" srcSet="image.webp" />
 
               <img
                 src="/images/WhatsApp_Image_2023-01-23_at_9.13.05_AM-removebg-preview.png"
@@ -97,77 +95,131 @@ const handleTerms =() =>{
           <div className="shop_dropdown_wrapper">
             <li onClick={handleShop}>Shop</li>
           </div>
-            {showShopCategory?<div className="shop_dropdown">
-  <ul>
-    <NavLink to="/shop">
-    <li onClick={handleShop}>See All Products</li>
-    </NavLink>
-     <NavLink to ="/shop/Hemodialysis">
-     <li onClick={handleShop}>Go to Hemodialysis</li>
-     </NavLink>
+          {showShopCategory ? (
+            <div className="shop_dropdown">
+              <ul>
+                <NavLink to="/shop">
+                  <li onClick={handleShop}>See All Products</li>
+                </NavLink>
+                <NavLink to="/shop/Hemodialysis">
+                  <li onClick={handleShop}>Go to Hemodialysis</li>
+                </NavLink>
 
-    <NavLink to="/shop/ICU Equipment">
-       <li onClick={handleShop}>Go to ICU Equipment</li>
-    </NavLink>
-    <NavLink to="/shop/Diagnostic Imaging Equipment">
-    <li onClick={handleShop}>Go to Diagnostic Imaging Equipment</li>
-    </NavLink>
+                <NavLink to="/shop/ICU Equipment">
+                  <li onClick={handleShop}>Go to ICU Equipment</li>
+                </NavLink>
+                <NavLink to="/shop/Diagnostic Imaging Equipment">
+                  <li onClick={handleShop}>
+                    Go to Diagnostic Imaging Equipment
+                  </li>
+                </NavLink>
 
-    <NavLink to="/shop/Operating Theatre Equipment">
-    <li onClick={handleShop}>Go to Operating Theater Equipment</li>
-    </NavLink>
-
-
-  </ul>
-</div>:""}
+                <NavLink to="/shop/Operating Theatre Equipment">
+                  <li onClick={handleShop}>
+                    Go to Operating Theater Equipment
+                  </li>
+                </NavLink>
+              </ul>
+            </div>
+          ) : (
+            ""
+          )}
           {/* </NavLink> */}
           <NavLink to="/service">
             <li>Service</li>
           </NavLink>
           <NavLink to="/our-blogs">
-          <li>Our Blog</li>
+            <li>Our Blog</li>
           </NavLink>
           <NavLink to="/mgtp">
-          <li>Careers</li>
+            <li>Careers</li>
           </NavLink>
           <NavLink to="/event">
-          <li>IWD</li>
+            <li>IWD</li>
           </NavLink>
-          <Button variant="contained" className="appointment-btn" onClick={handleOpen}>Healthvest</Button>
-
+          <Button
+            variant="contained"
+            className="appointment-btn"
+            onClick={handleOpen}>
+            Healthvest
+          </Button>
         </ul>
 
         {/* modal for healthvest  */}
         <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <div className="healthvest_wrapper">
-          <div className="cancel" onClick={handleClose}>X</div> 
-           {!showTerms? <>  <h2 className="light-blue-bg-text">What is Health Vest?</h2>
-            <p>Health Vest is a medical equipment financing platform which facilitates convenient way for individuals and businesses to purchase the necessary goods they need without breaking their bank. With this platform, users are able to spread out payments over a length of time up to five years at competitive interest rates with no hidden costs. This makes it easier for consumers or companies who didn't have the money upfront, but still needed these products, to acquire them - especially those that can be quite costly such as medical imaging devices, diagnostic instruments, ventilators and more. Furthermore, customers have access to quality refurbished items which would further lower cost and allow buyers affordable payment options while adhering to regulatory industry standards we must meet in order achieve safe use and maintenance of our products.</p> <div className="modal-btns">
-            <Button className="appointment-btn" onClick={handleTerms}>Terms and Conditions</Button>
-            <Link to="/financial-support">
-            <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
-            </Link>
-            </div></> : <><h2 className="light-blue-bg-text">Terms and Condition</h2> <p> terms and condition loading....</p> <div className="modal-btns">
-            <Button variant="contained" className="appointment-btn" onClick={handleClose}>Close</Button>
-            <Link to="/financial-support">
-            <Button variant="contained" className="appointment-btn" onClick={handleClose}>Apply for healthvest</Button>
-            </Link>
-            </div> </> }
-
-        </div>
-      </Modal>
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description">
+          <div className="healthvest_wrapper">
+            <div className="cancel" onClick={handleClose}>
+              X
+            </div>
+            {!showTerms ? (
+              <>
+                {" "}
+                <h2 className="light-blue-bg-text">What is HealthVest?</h2>
+                <p>
+                  HealthVest is a medical equipment financing platform which
+                  facilitates convenient way for individuals and businesses to
+                  purchase the necessary goods they need without breaking their
+                  bank. With this platform, users are able to spread out
+                  payments over a length of time up to five years at competitive
+                  interest rates with no hidden costs. This makes it easier for
+                  consumers or companies who didn't have the money upfront, but
+                  still needed these products, to acquire them - especially
+                  those that can be quite costly such as medical imaging
+                  devices, diagnostic instruments, ventilators and more.
+                  Healthvest also allows people invest in Healthcare by funding assets(medical equipment) and projects for a return-on-investment. They can also find partnerships and become part owners of a healthcare business or set up their own healthcare business.
+                </p>{" "}
+                <div className="modal-btns">
+                  <a href="/files/HEALTHVEST.pdf" download>
+                    <Button className="appointment-btn" onClick={handleTerms}>
+                      Learn More
+                    </Button>
+                  </a>
+                  <Link to="/financial-support">
+                    <Button
+                      variant="contained"
+                      className="appointment-btn"
+                      onClick={handleClose}>
+                      Apply for healthvest
+                    </Button>
+                  </Link>
+                </div>
+              </>
+            ) : (
+              <>
+                <h2 className="light-blue-bg-text">Terms and Condition</h2>{" "}
+                <p> More about HealthVest is downloading. kindly read it </p>{" "}
+                <div className="modal-btns">
+                  <Button
+                    variant="contained"
+                    className="appointment-btn"
+                    onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Link to="/financial-support">
+                    <Button
+                      variant="contained"
+                      className="appointment-btn"
+                      onClick={handleClose}>
+                      Apply for healthvest
+                    </Button>
+                  </Link>
+                </div>{" "}
+              </>
+            )}
+          </div>
+        </Modal>
       </header>
 
       {children}
 
       {/* FOOTER */}
-     <div className="footer_newsletter">
-      <Newsletter/></div> 
+      <div className="footer_newsletter">
+        <Newsletter />
+      </div>
       <footer>
         <div
           className="about"
@@ -177,8 +229,7 @@ const handleTerms =() =>{
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <h3>MEDPAU</h3>
           <p>
             At MedPau, we believe smart innovations in healthcare is key to
@@ -203,8 +254,7 @@ const handleTerms =() =>{
             </Link>
             <Link
               to="//twitter.com/medpauintl?s=11&t=zBroa9mFl_fitJFK1HbUcQ"
-              target="_blank"
-            >
+              target="_blank">
               <li>
                 <FaTwitter />
               </li>
@@ -219,28 +269,35 @@ const handleTerms =() =>{
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <div className="head">
             <h3>Medpau Impact Projects </h3>
             <hr />
           </div>
           <ul>
-            
-            <NavLink to="//medpauimpacts.com/womens-network/" target="blank" rel="noopener noreferrer">
+            <NavLink
+              to="//medpauimpacts.com/womens-network/"
+              target="blank"
+              rel="noopener noreferrer">
               {" "}
               <li>
                 <FaChevronRight />
                 Medpau Women Network
               </li>
             </NavLink>
-            <NavLink to="//medpauimpacts.com/mgtp/" target="blank" rel="noopener noreferrer">
+            <NavLink
+              to="//medpauimpacts.com/mgtp/"
+              target="blank"
+              rel="noopener noreferrer">
               <li>
                 <FaChevronRight />
                 Medpau Graduate Training Program
               </li>
             </NavLink>
-            <NavLink to="//medpauimpacts.com/wkd/" target="blank" rel="noopener noreferrer">
+            <NavLink
+              to="//medpauimpacts.com/wkd/"
+              target="blank"
+              rel="noopener noreferrer">
               {" "}
               <li>
                 <FaChevronRight />
@@ -248,18 +305,17 @@ const handleTerms =() =>{
               </li>
             </NavLink>
             <NavLink to="/event">
-            <li>
-              <FaChevronRight />
-              Events - International Women's Day
-            </li>
+              <li>
+                <FaChevronRight />
+                Events - International Women's Day
+              </li>
             </NavLink>
             <NavLink to="/faq">
-            <li>
-              <FaChevronRight />
-              FAQ
-            </li>
+              <li>
+                <FaChevronRight />
+                FAQ
+              </li>
             </NavLink>
-
           </ul>
         </div>
         <div
@@ -270,8 +326,7 @@ const handleTerms =() =>{
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <div className="head">
             <h3>Recent Posts</h3>
             <hr />
@@ -285,29 +340,33 @@ const handleTerms =() =>{
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
           data-aos-mirror="true"
-          data-aos-once="true"
-        >
+          data-aos-once="true">
           <div className="head">
             <h3>Contact Us</h3>
             <hr />
           </div>
           <ul>
             <li>
-              <FaPhone /> <a href="tel:+2349085323596"><span>+234908 532 3596</span> </a> 
+              <FaPhone />{" "}
+              <a href="tel:+2349085323596">
+                <span>+234908 532 3596</span>{" "}
+              </a>
             </li>
-            <a href="tel:+233256885072"><li> <FaPhone /> <span>+23325 688 5072</span> </li>
+            <a href="tel:+233256885072">
+              <li>
+                {" "}
+                <FaPhone /> <span>+23325 688 5072</span>{" "}
+              </li>
             </a>
 
             <a href="mailto:Info@medpau.net">
-            <li>
-              <MdEmail /> <span>Info@medpau.net</span>
-            </li>
+              <li>
+                <MdEmail /> <span>Info@medpau.net</span>
+              </li>
             </a>
             <li>
               <MdLocationPin />
-              <span>
-                3, Tunde Gafar Close, Off Adeniyi Jones, Ikeja, Lagos
-              </span>
+              <span>3, Tunde Gafar Close, Off Adeniyi Jones, Ikeja, Lagos</span>
             </li>
           </ul>
         </div>

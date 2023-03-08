@@ -27,33 +27,32 @@ export default function Shop() {
   }, 1500);
 
   useEffect(() => {
-    setProducts(data)
+    setProducts(data);
   }, []);
 
   // handleInput function
   const handleInput = (e) => {
-     setSearchInput(e.target.value);
-    };
+    setSearchInput(e.target.value);
+  };
 
   // handleSubmit function
   const handleSubmit = (e) => {
     e.preventDefault();
     const searchResult = data.filter((searched) =>
       searched.name.toLowerCase().includes(searchInput.toLowerCase())
-      );
-      setProducts(searchResult);
-      setSearchInput("")
-  }
-
-
-
+    );
+    setProducts(searchResult);
+    setSearchInput("");
+  };
 
   return (
-    <HeadFoot pageTitle="Online store" description="Online store/shop page of medpau international Limited">
+    <HeadFoot
+      pageTitle="Online store"
+      description="Online store/shop page of medpau international Limited">
       <div className="about-head">
         <div className="image">
           <div className="overlay"></div>
-          	<source type="image/webp" srcSet="image.webp"/>
+          <source type="image/webp" srcSet="image.webp" />
           <img src="/images/breadcrumb-image-1.jpg" alt="about-us" />
           <div
             className="texts"
@@ -63,8 +62,7 @@ export default function Shop() {
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
             data-aos-mirror="true"
-            data-aos-once="false"
-          >
+            data-aos-once="false">
             <h2>Shop here</h2>
             <p>
               <MdOutlineHome />
@@ -127,17 +125,16 @@ export default function Shop() {
                   <IoIosFlash className="icon" />
                   HEMODIALYSIS MACHINES
                 </h3>
-     <NavLink to ="/shop/Hemodialysis" >
-                <button>
-                  <p>
-                    View all <BsForwardFill className="icon" />
-                  </p>
-                </button>
+                <NavLink to="/shop/Hemodialysis">
+                  <button>
+                    <p>
+                      View all <BsForwardFill className="icon" />
+                    </p>
+                  </button>
                 </NavLink>
               </div>
               <div className="products-container">
-          <SimpleSlider/>
-
+                <SimpleSlider />
               </div>
               <div className="header">
                 <h3>
@@ -170,16 +167,16 @@ export default function Shop() {
                   <BiCategory className="icon" />
                   ICU EQUIPMENTS
                 </h3>
-    <NavLink to="/shop/ICU Equipment">
-                <button>
-                  <p>
-                    View all <BsForwardFill className="icon" />
-                  </p>
-                </button>
+                <NavLink to="/shop/ICU Equipment">
+                  <button>
+                    <p>
+                      View all <BsForwardFill className="icon" />
+                    </p>
+                  </button>
                 </NavLink>
               </div>
               <div className="products-container">
-              <CenterSlider />
+                <CenterSlider />
               </div>
               <div className="header">
                 <h3>
@@ -209,7 +206,7 @@ export default function Shop() {
               <div className="banner1"></div>
               <div className="banner2">
                 <div className="image">
-          	<source type="image/webp" srcSet="image.webp"/>
+                  <source type="image/webp" srcSet="image.webp" />
                   <img src="/images/sales.png" alt="banner2" />
                 </div>
               </div>
@@ -221,12 +218,12 @@ export default function Shop() {
                   <BsGiftFill className="icon" />
                   Diagnostic Imaging Equipment
                 </h3>
-    <NavLink to="/shop/Diagnostic Imaging Equipment">
-                <button>
-                  <p>
-                    View all <BsForwardFill className="icon" />
-                  </p>
-                </button>
+                <NavLink to="/shop/Diagnostic Imaging Equipment">
+                  <button>
+                    <p>
+                      View all <BsForwardFill className="icon" />
+                    </p>
+                  </button>
                 </NavLink>
               </div>
               <div className="item-cards">
@@ -254,12 +251,12 @@ export default function Shop() {
                   <BsGiftFill className="icon" />
                   Operating Theatre Equipment
                 </h3>
-    <NavLink to="/shop/Operating Theatre Equipment">
-                <button>
-                  <p>
-                    View all <BsForwardFill className="icon" />
-                  </p>
-                </button>
+                <NavLink to="/shop/Operating Theatre Equipment">
+                  <button>
+                    <p>
+                      View all <BsForwardFill className="icon" />
+                    </p>
+                  </button>
                 </NavLink>
               </div>
               <div className="item-cards">
@@ -319,8 +316,7 @@ export default function Shop() {
               data-aos-duration="1000"
               data-aos-easing="ease-in-out"
               data-aos-mirror="true"
-              data-aos-once="true"
-            >
+              data-aos-once="true">
               <ShortMessage
                 header="Worldwide Delivery
 "
@@ -336,7 +332,7 @@ export default function Shop() {
               <ShortMessage
                 header="Shop With Confidence
 "
-                description="We offer competitive prices on our 100 million plus products and guarantee you great value for your money."
+                description="We offer competitive prices on our 100 plus products and guarantee you great value for your money."
               />
               <ShortMessage
                 header="24/7 Support

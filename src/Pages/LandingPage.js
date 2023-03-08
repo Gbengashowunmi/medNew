@@ -22,8 +22,8 @@ export default function LandingPage() {
   };
   return (
     <HeadFoot
-      pageTitle="International Limited Home Page"
-      description="Welcome to medpau international limited, we offer sales of medical equipments, technical services and financial support for instalmental purchase of expensive medical equipments/facilities.">
+      pageTitle="International Limited Home Page. sales of products, technical solutions, read."
+      description="Welcome to medpau international limited, we offer sales of medical equipments and products, technical services solutions and financial support for instalmental purchase of expensive medical equipments/facilities. read">
       <main>
         <Carousel />
       </main>
