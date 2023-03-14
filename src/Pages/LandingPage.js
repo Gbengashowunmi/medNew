@@ -20,7 +20,7 @@ export default function LandingPage() {
   const handleclick = () => {
     setReadMore(!readMore);
   };
-  return ( 
+  return (
     <HeadFoot
       pageTitle="International Limited Home Page. sales of products, technical solutions, read."
       description="Welcome to medpau international limited, we offer sales of medical equipments and products, technical services solutions and financial support for instalmental purchase of expensive medical equipments/facilities. read">
@@ -158,7 +158,7 @@ export default function LandingPage() {
           data-aos-once="true">
           <div className="img">
             <source type="image/webp" srcSet="image.webp" />
-            <img src="/images/hospital.jpg" alt="aside" />
+            <img src="/images/turnkey.jpeg" alt="aside" />
           </div>
           <div className="text">
             <h2>Hospital Turnkey Project solutions</h2>

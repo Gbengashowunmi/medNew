@@ -4,8 +4,6 @@ main {
   position: relative;
   text-align: left;
   margin-bottom: 2rem;
-
-
 }
 .hero-card-wrapper {
   position: relative;
@@ -22,25 +20,24 @@ main {
     top: 0;
     left: 0;
   }
-  img{
+  img {
     object-fit: cover;
   }
-  .overlay{
-    background:rgba(0, 0, 255, 0.295);
+  .overlay {
+    background: rgba(0, 0, 255, 0.295);
     z-index: 0;
-
   }
   .hero-cards {
     width: 100%;
     height: 250px;
     top: 40vw;
-    margin-left: .5%;
+    margin-left: 0.5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 20px;
     .hero-card {
-    // z-index: 2;
-border: 1px solid var(--clr-secondary);
+      // z-index: 2;
+      border: 1px solid var(--clr-secondary);
       border-radius: 10px;
       box-shadow: inset 4px 4px 5px 0 rgba(255, 255, 255, 0.829),
         inset -4px -4px 5px 0 rgba(0, 0, 0, 0.125),
@@ -48,21 +45,21 @@ border: 1px solid var(--clr-secondary);
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      padding:20px 20px;
+      padding: 20px 20px;
       align-items: flex-start;
-      text-align:left;
+      text-align: left;
       cursor: pointer;
       background-color: rgba(255, 255, 255, 0.589);
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
       color: var(--clr-secondary);
 
-      p{
+      p {
         text-align: left;
       }
       h3 {
-      border-bottom: 1.5px solid transparent;
-transition:0.6s
+        border-bottom: 1.5px solid transparent;
+        transition: 0.6s;
       }
       button {
         background-color: transparent;
@@ -83,26 +80,24 @@ transition:0.6s
     .hero-card:hover h3 {
       border-bottom: 1.5px solid var(--clr-secondary);
     }
-
   }
 }
 
-.healthvest_wrapper{
-  .specialized_solutions{
+.healthvest_wrapper {
+  .specialized_solutions {
     margin: auto;
     width: fit-content;
     list-style: none;
-    li{
-padding: 10px 20px;
-border-radius: 5px ;
+    li {
+      padding: 10px 20px;
+      border-radius: 5px;
     }
-    li:hover{
-background-color: var(--clr-primary);
-color: var(--clr-white);
-cursor: pointer;
+    li:hover {
+      background-color: var(--clr-primary);
+      color: var(--clr-white);
+      cursor: pointer;
     }
   }
-
 }
 .schedule-section {
   width: 100%;
@@ -115,15 +110,14 @@ cursor: pointer;
   .work-hour {
     border-radius: 10px;
     transition: 0.6s;
-// border:2px solid red;
-
+    // border:2px solid red;
   }
   .work-hour:hover {
     transform: scale(1.008);
     transition: 0.6s;
   }
   .schedule {
-// border:2px solid red;
+    // border:2px solid red;
     background-color: var(--clr-primary);
     height: fit-content;
     padding: 2rem;
@@ -159,11 +153,11 @@ cursor: pointer;
     box-shadow: 2px 2px 6px var(--clr-border-shadow);
     padding-bottom: 0;
     height: fit-content;
-    transition: .6s;
+    transition: 0.6s;
     .img {
       width: 100%;
       height: 50%;
-    // border: 2px solid red;
+      // border: 2px solid red;
       img {
         width: 100%;
         height: 100%;
@@ -181,12 +175,11 @@ cursor: pointer;
       justify-content: center;
       text-align: left;
       padding: 10px 20px;
-    margin-bottom: 0;
+      margin-bottom: 0;
       align-items: flex-start;
-    ul{
-      padding: 10px 20px;
-
-    }
+      ul {
+        padding: 10px 20px;
+      }
 
       h2 {
         color: var(--clr-secondary);
@@ -206,7 +199,7 @@ cursor: pointer;
   }
 }
 
-.our-vision{
+.our-vision {
   width: 100%;
   height: fit-content;
   margin-top: 1rem;
@@ -218,7 +211,8 @@ cursor: pointer;
   margin-top: 20px;
 }
 .featured-post,
-.partnership, .blogs {
+.partnership,
+.blogs {
   margin-top: 2rem;
   .head {
     display: flex;
@@ -249,18 +243,17 @@ cursor: pointer;
   }
   .products-container {
     width: 95%;
-    margin:auto;
+    margin: auto;
     color: var(--clr-secondary);
-.partner_wrapper{
-  width: 100%;
-
-}
+    .partner_wrapper {
+      width: 100%;
+    }
   }
 }
 
-.blogs{
+.blogs {
   padding: 2rem;
-  .blogs_container{
+  .blogs_container {
     height: 400px;
     // border: 2px solid red;
     gap: 1rem;
@@ -284,7 +277,7 @@ cursor: pointer;
       flex-direction: column;
       height: fit-content;
       gap: 15px;
-margin: auto;
+      margin: auto;
       .hero-card {
         height: fit-content;
         padding: 40px;
@@ -299,7 +292,8 @@ margin: auto;
     padding: 1rem;
   }
   .featured-post,
-  .partnership, .blogs {
+  .partnership,
+  .blogs {
     .products-container {
       grid-template-columns: 1fr 1fr 1fr;
     }
@@ -308,7 +302,8 @@ margin: auto;
 
 @media (max-width: 550px) {
   .featured-post,
-  .partnership, .blogs {
+  .partnership,
+  .blogs {
     .products-container {
       grid-template-columns: 1fr 1fr;
       column-gap: 0.6rem;

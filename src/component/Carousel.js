@@ -18,7 +18,7 @@ export default function Carousel() {
       <div className="carousel-item">
         <div className="overlay"></div>
         <div className="image">
-          	<source type="image/webp" srcSet="image.webp"/>
+          <source type="image/webp" srcSet="image.webp" />
           <img
             className="d-block w-100"
             src="/images/her-bg-slider.jpg"
@@ -31,10 +31,10 @@ export default function Carousel() {
         </div>
       </div>
       <div className="carousel-item">
-      <div className="overlay"></div>
+        <div className="overlay"></div>
 
         <div className="image">
-          	<source type="image/webp" srcSet="image.webp"/>
+          <source type="image/webp" srcSet="image.webp" />
           <img
             className="d-block w-100"
             src="/images/hero-image11111.jpg"
@@ -42,19 +42,24 @@ export default function Carousel() {
           />
         </div>
         <div className="details">
-          <h1> TURNKEY PROJECTS. MEDICAL EQUIPMENT. TECHNICAL SERVICE. SPECIALIZED SOLUTIONS</h1>
+          <h1>
+            {" "}
+            TURNKEY PROJECTS. MEDICAL EQUIPMENT. TECHNICAL SERVICE. SPECIALIZED
+            SOLUTIONS
+          </h1>
           <p>
-          We are your no. 1 growth partners. Bringing you custom made solutions and latest innovations in Healthcare
+            We are your no. 1 growth partners. Bringing you custom made
+            solutions and latest innovations in Healthcare
           </p>
           {/* <button>Read More</button> */}
         </div>
       </div>
 
       <div className="carousel-item">
-      <div className="overlay"></div>
+        <div className="overlay"></div>
 
         <div className="image">
-          	<source type="image/webp" srcSet="image.webp"/>
+          <source type="image/webp" srcSet="image.webp" />
           <img
             className="d-block w-100"
             src="/images/hero_home_01.jpg"
