@@ -128,7 +128,7 @@ better economy and quality of life.
           />
           <OurServices
             head="Shop with confidence"
-            decsription="We offer competitive prices on our 100 million plus products and guarantee you great value for your money."
+            decsription="We offer competitive prices on our 100+ products and guarantee you great value for your money."
           />
         </div>
       </section>
